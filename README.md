@@ -24,3 +24,17 @@ python3 manage.py makemigrations
 
 To migrate:
 python3 manage.py migrate
+
+To enter into interactive shell:
+python3 manage.py shell
+
+Then:
+from appname.models import classname
+eg: from posts.model import Post
+p = Post()
+p.title = 'Something'
+p.save() to enter it into database
+exit() to exit out of the shell
+
+override __str__ method to tell what to be shown when Post.objects.all() is called
+
