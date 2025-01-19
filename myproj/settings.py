@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # Added Externally to as we have created posts app 
     'posts',
 ]
 
@@ -56,7 +57,10 @@ ROOT_URLCONF = 'myproj.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+
+        #added 'templates' externally in DIRS to access templates folder
         'DIRS': ['templates'],
+
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
