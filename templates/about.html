@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About page</title>
-    
-<body>
-    <h1>Check out <a href="/" >Home Page</a> </h1>
+{% extends 'layout.html' %}
+
+{% block title %}
+    ABOUT PAGE
+{% endblock %}
 
 
-    <script src="{% static 'js/main.js' %}" defer></script>
-</body>
-</html>
+{% block content %}
+    <h1>Check out <a href="/">Go to Home Page</a></h1>
+{% endblock %}
