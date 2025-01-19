@@ -6,7 +6,7 @@ source .venv/bin/activate
 To deactivate:
 deactivate
 
-TO create django app:
+To create django app:
 first install pip
 then to uses pip ->
 python3 -m pip (command)
@@ -37,4 +37,9 @@ p.save() to enter it into database
 exit() to exit out of the shell
 
 override __str__ method to tell what to be shown when Post.objects.all() is called
+
+To create Superuser for Django admin:
+python3 manage.py createsuperuser
+
+vishalkumar | vishal12345
 

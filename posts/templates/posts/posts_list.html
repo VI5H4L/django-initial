@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post page</title>
-</head>
-<body>
-    Hiii POSTS
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block title %}
+    POSTS PAGE
+{% endblock %}
+
+
+{% block content %}
+    <section>
+        {% for post in posts %}
+        <article>
+            <h1>{{post.title}}</h1>
+            <p>{{post.date}}</p>
+            <p>{{post.body}}</p>
+        </article>
+        {% endfor %}
+    </section>
+{% endblock %}
