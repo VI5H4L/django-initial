@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Added Externally to as we have created posts app 
     'posts',
+    'users',
 ]
 
 MIDDLEWARE = [

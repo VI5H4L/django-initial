@@ -26,7 +26,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.Homepage,name = "home"),
     path('about/',views.Aboutpage, name = "about"),
-    path('posts/',include('posts.urls'))
+    path('posts/',include('posts.urls')),
+    path('users/',include('users.urls'))
 ]
 
 #setup for adding media folder to config
