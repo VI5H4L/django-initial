@@ -7,5 +7,8 @@ class Post(models.Model):
     slug = models.SlugField()
     date = models.DateTimeField(auto_now_add=True)
 
+    #install Pillow package first to use ImageField without errors
+    banner = models.ImageField(default='fallback.png',blank=True)
+
     def __str__(self):
         return self.title;

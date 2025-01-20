@@ -43,3 +43,6 @@ python3 manage.py createsuperuser
 
 vishalkumar | vishal12345
 
+To work with images:
+python3 -m pip install Pillow
+
