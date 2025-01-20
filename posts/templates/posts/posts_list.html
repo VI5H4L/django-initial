@@ -9,7 +9,9 @@
     <section>
         {% for post in posts %}
         <article>
-            <h1>{{post.title}}</h1>
+            <a href="{% url 'posts:page' slug=post.slug %}">
+                <h1>{{post.title}}</h1>
+            </a>
             <p>{{post.date}}</p>
             <p>{{post.body}}</p>
         </article>

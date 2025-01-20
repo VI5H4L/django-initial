@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        HEADER : <a href="/">Home</a> | <a href="about/">About</a> |
+        HEADER : <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a> | <a href="{% url 'posts:list' %}">Posts</a>
     </header>
 
     <main>
@@ -17,7 +17,7 @@
     </main>
 
     <footer>
-        FOOTER
+        Made with ❤️ by V15H4L
     </footer>
 
     <script src="{% static 'js/main.js' %}" defer></script>
