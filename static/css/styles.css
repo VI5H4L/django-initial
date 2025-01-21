@@ -14,3 +14,7 @@ body{
     height: 350px !important;
     object-fit: cover;
 }
+
+.logout-form, .logout-btn{
+    display: inline;
+}
